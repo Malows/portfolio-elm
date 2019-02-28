@@ -1,0 +1,15 @@
+.welcome {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+
+    &__message {
+      color: var(--color-light);
+      font-family: 'Raleway';
+      font-size: 6rem;
+      text-align: center;
+      font-weight: 100;
+    }
+}

@@ -1,0 +1,45 @@
+:root {
+    --color-primary: #2FF200;
+    --color-secondary: #DEDEDE;
+    --color-muted: #333;
+    --color-light: #999;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Raleway:100');
+
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+@each $color in primary, secondary, muted {
+    .text-#{$color} { color: var(--color-#{$color}); }
+    .bg-#{$color} { background-color: var(--color-#{$color}); }
+}
+
+.p-md {
+    padding: 1rem;
+}
+
+.img-responsive {
+    min-height: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.border--light {
+    border: solid #222 .5px;
+}
+
+@import 'layout';
+
+$fa-font-path: "fonts";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';

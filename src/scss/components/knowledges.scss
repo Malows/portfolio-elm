@@ -1,0 +1,47 @@
+.knowledges {
+    grid-area: knowledges;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 1rem;
+    grid-gap: 1rem;
+
+    &__description {
+        &__img {
+            width: 15vw;
+            height: 15vw;
+            margin: 0 1.5rem 1rem 0;
+            float: left;
+        }
+        &__text {
+            margin: 0;
+            white-space: pre-line;
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+        grid-auto-rows: 9.5rem;
+        align-content: stretch;
+        justify-content: center;
+    }
+
+    &-item {
+        padding: 1.5rem;
+        display: grid;
+        grid-template-rows: 4rem 1.5rem;
+        grid-gap: 1rem;
+
+        &__title {
+            margin: 0;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 900px) {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+

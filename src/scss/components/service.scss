@@ -1,0 +1,11 @@
+.service {
+    text-align: center;
+
+    &__heading {
+        margin: 1rem 0;
+    }
+
+    &__description {
+        color: var(--color-muted);
+    }
+}
