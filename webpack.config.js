@@ -2,7 +2,6 @@ const path = require('path')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 
-
 // const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 // const ImageminPlugin = require('imagemin-webpack-plugin').default
 const elmMinify = require('elm-minify')
@@ -15,7 +14,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const MODE =
     process.env.npm_lifecycle_event === 'prod' ? 'production' : 'development'
 
-const publicPath = process.env.PUBLIC_PATH || '/'
+const repository = process.env.REPOSITORY
+const publicPath = repository ? `https://malows.github.io/${repository}/` : '/'
 
 const withDebug = !process.env['npm_config_nodebug']
 
