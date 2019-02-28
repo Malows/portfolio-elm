@@ -33,7 +33,7 @@ profile socialContacts =
         [ img
             [ class "profile__img"
             , class "img-responsive"
-            , src "/img/pht.png"
+            , src "img/pht.png"
             ]
             []
         , h4 [ class "profile__title" ] [ text "Juan Manuel Cruz" ]

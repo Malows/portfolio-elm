@@ -30,37 +30,37 @@ init =
                 I worked with React, preact, others frameworks and libraries and vanilla JS. Promoting the use of libraries when they really add some value to the develop over the overhead.
                 Experience in profiling, testing and debugging.
                 A functional-style programming evangelist. """
-                "/img/skills/javascript.svg"
+                "img/skills/javascript.svg"
             , Knowledge
                 "Python"
                 """A wide experience working with Python.
                 Developing CLI tools, automating processes for development and deployment stages.
                 And a quiet good experience in web development using Django.
                 I used Python for educational purpose, teaching how-to program, or mentoring the growth of yunglings and people who are growing into their professional career."""
-                "/img/skills/python.svg"
+                "img/skills/python.svg"
             , Knowledge
                 "PHP"
                 """A confident skill developing backend applications from a frameworkless flavor.
                 Passing through simplest frameworks like CodeIgniter until complex and high-level frameworks like Laravel.
                 Used to develop management software and handcrafted solutions."""
-                "/img/skills/php.svg"
+                "img/skills/php.svg"
             , Knowledge
                 "Elm"
                 """I started to use Elm for my personal projects. With a really good development experience and exceptionals results.
                 Starting to port some olds projects to this wonderful language"""
-                "/img/skills/elm.svg"
+                "img/skills/elm.svg"
             , Knowledge
                 "Rust"
                 """As same as Elm, I started to port some cli tools and small autimations projects to Rust.
                 To bring robustness and efficience.
                 Also I discovered in Rust a fantastic language for microservices and backend development"""
-                "/img/skills/rust.svg"
+                "img/skills/rust.svg"
             , Knowledge
                 "C/C++"
                 """I started to develop in C++.
                 Also during my degree it was my main language.
                 Developing OpenGL apps, working with distributed structures and learning the bases of algorithms."""
-                "/img/skills/cpp.svg"
+                "img/skills/cpp.svg"
             ]
 
         services =
