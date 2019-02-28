@@ -8,8 +8,8 @@
     "dev": "webpack-dev-server --hot --colors --port 8080",
     "build": "webpack",
     "prod": "webpack -p",
-    "publish:gh-pages": "PUBLIC_PATH=\"https:\/\/malows.github.io\/portfolio-elm\/\" npm run publish",
-    "publish": "npm run prod && npx push-dir --dir=dist --branch=gh-pages"
+    "publish": "npx push-dir --dir=dist --branch=gh-pages --cleanup",
+    "deploy:gh-pages": "PUBLIC_PATH=\"\" npm_config_nodebug=true npm run prod && npm run publish"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
