@@ -14,8 +14,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const MODE =
     process.env.npm_lifecycle_event === 'prod' ? 'production' : 'development'
 
-const repository = process.env.REPOSITORY
-const publicPath = repository ? `https://malows.github.io/${repository}/` : '/'
+const publicPath = process.env.hasOwnProperty('PUBLIC_PATH')
+    ? process.env.PUBLIC_PATH
+    : '/'
 
 const withDebug = !process.env['npm_config_nodebug']
 
