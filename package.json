@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server --hot --colors --port 8080",
     "build": "webpack",
     "prod": "webpack -p",
-    "deploy": "npm run prod && npx push-dir --dir=dist --branch=gh-pages"
+    "publish": "PUBLIC_PATH=\"portfolio-elm\/\" npm run prod && npx push-dir --dir=dist --branch=gh-pages"
   },
   "devDependencies": {
     "@babel/core": "^7.3.3",
