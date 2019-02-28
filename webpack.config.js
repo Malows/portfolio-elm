@@ -15,6 +15,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const MODE =
     process.env.npm_lifecycle_event === 'prod' ? 'production' : 'development'
 
+const publicPath = process.env.PUBLIC_PATH || '/'
+
 const withDebug = !process.env['npm_config_nodebug']
 
 console.log('\x1b[36m%s\x1b[0m', `** elm-webpack-starter: mode '${MODE}', withDebug: ${withDebug}\n`)
@@ -24,7 +26,7 @@ var common = {
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, 'dist'),
-        publicPath: '/',
+        publicPath,
         // FIXME webpack -p automatically adds hash when building for production
         // filename: MODE == 'production' ? '[name]-[hash].js' : 'index.js'
         filename: 'app.js'
