@@ -139,7 +139,15 @@ if (MODE === 'production') {
     module.exports = merge(common, {
         optimization: {
             splitChunks: {
-                chunks: 'all'
+                chunks: 'all',
+                cacheGroups: {
+                    styles: {
+                        name: 'styles',
+                        test: /\.css$/,
+                        chunks: 'all',
+                        enforce: true
+                    }
+                }
             }
         },
         plugins: [
