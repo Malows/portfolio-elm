@@ -9,6 +9,7 @@ type alias Model =
     , knowledges : List Knowledge
     , services : List Service
     , welcomeMessage : String
+    , overWelcome : Bool
     }
 
 
@@ -81,4 +82,4 @@ init =
         welcome =
             "Nice to see you around"
     in
-    Model socialItems Nothing knowledges services welcome
+    Model socialItems Nothing knowledges services welcome False

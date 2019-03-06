@@ -1,7 +1,7 @@
 module Messages exposing (Msg(..), update)
 
-import Types exposing (Knowledge, Portfolio)
 import Model exposing (Model)
+import Types exposing (Knowledge, Portfolio)
 
 
 type Msg
@@ -9,6 +9,7 @@ type Msg
     | HideKnowledge
     | OpenPortfolio Portfolio
     | ClosePortfolio
+    | ChangeWelcome Bool
 
 
 update : Msg -> Model -> Model
@@ -16,6 +17,9 @@ update msg model =
     case msg of
         ShowKnowledge knowledge ->
             { model | selectedKnowledge = Just knowledge }
+
+        ChangeWelcome value ->
+            { model | overWelcome = value }
 
         _ ->
             model
