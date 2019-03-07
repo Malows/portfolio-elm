@@ -20,7 +20,7 @@ init =
             [ ( "twitter", "https://twitter.com/wroughtbywind" )
             , ( "github", "https://github.com/Malows" )
             , ( "gitlab", "https://gitlab.com/Malows" )
-            , ( "linkedin", "https://www.linkedin.com/in/juan-manuel-cruz-0a8116b5/" )
+            , ( "linkedin-in", "https://www.linkedin.com/in/juan-manuel-cruz-0a8116b5/" )
             ]
 
         knowledges =
