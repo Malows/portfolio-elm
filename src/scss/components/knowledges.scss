@@ -1,46 +1,56 @@
 .knowledges {
-    grid-area: knowledges;
     display: grid;
+    grid-area: knowledges;
+    grid-gap: 1rem;
+    grid-template-areas: "knowledges-description knowledges-items";
     grid-template-columns: 1fr 1fr;
     margin: 0 1rem;
-    grid-gap: 1rem;
+
+    @media (max-width: 900px) {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    @media(max-width: 640px) {
+        grid-template-areas: "knowledges-items" "knowledges-description";
+        grid-template-columns: 1fr;
+    }
 
     &__description {
+        grid-area: knowledges-description;
+
         &__img {
-            width: 15vw;
+            float: left;
             height: 15vw;
             margin: 0 1.5rem 1rem 0;
-            float: left;
+            width: 15vw;
         }
+
         &__text {
-            margin: 0;
+            padding-bottom: 1rem;
             white-space: pre-line;
         }
     }
 
     &__items {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, auto));
-        grid-auto-rows: 9.5rem;
         align-content: stretch;
+        display: grid;
+        grid-area: knowledges-items;
+        grid-auto-rows: 9.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(200px, auto));
         justify-content: center;
     }
 
     &-item {
-        padding: 1.5rem;
         display: grid;
-        grid-template-rows: 4rem 1.5rem;
         grid-gap: 1rem;
+        grid-template-rows: 4rem 1.5rem;
+        padding: 1.5rem;
 
         &__title {
-            margin: 0;
             font-size: 1.5rem;
+            margin: 0;
             text-align: center;
         }
-    }
-
-    @media (max-width: 900px) {
-        grid-template-columns: 2fr 1fr;
     }
 }
 
