@@ -38,6 +38,10 @@
         grid-auto-rows: 9.5rem;
         grid-template-columns: repeat(auto-fill, minmax(200px, auto));
         justify-content: center;
+
+        @media (max-width: 400px) {
+            grid-template-columns: repeat(auto-fill, minmax(150px, auto));
+        }
     }
 
     &-item {
