@@ -12,12 +12,14 @@ import Types exposing (Knowledge)
 knowledge : Knowledge -> Html Msg
 knowledge data =
     div [ class "knowledges-item", onClick (ShowKnowledge data) ]
-        [ img
-            [ class "knowledges-item__img"
-            , class "img-responsive"
-            , src data.url
+        [ div
+            [ class "knowledges-item__img" ]
+            [ img
+                [ class "img-responsive"
+                , src data.url
+                ]
+                []
             ]
-            []
         , p [ class "knowledges-item__title" ] [ text data.name ]
         ]
 
@@ -54,9 +56,5 @@ knowledgeLayout : Model -> Html Msg
 knowledgeLayout model =
     div [ class "knowledges" ]
         [ knowledgeDescription model.selectedKnowledge
-        , div
-            [ class "knowledges__items"
-            , class "p-md"
-            ]
-            (List.map knowledge model.knowledges)
+        , div [ class "knowledges__items" ] (List.map knowledge model.knowledges)
         ]

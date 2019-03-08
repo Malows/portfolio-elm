@@ -33,7 +33,11 @@ socialLink : String -> String -> Html msg
 socialLink brand url =
     li
         []
-        [ a [ href url ] [ icon brand ]
+        [ a
+            [ class "profile__link"
+            , href url
+            ]
+            [ icon brand ]
         ]
 
 
@@ -57,7 +61,11 @@ profile socialContacts =
             ]
             []
         , h4 [ class "profile__title" ] [ text "Juan Manuel Cruz" ]
-        , p [ class "profile__subtitle", class "text-muted" ] [ text "Senior Developer" ]
+        , p
+            [ class "profile__subtitle"
+            , class "text-muted"
+            ]
+            [ text "Senior Developer" ]
         , socialList socialContacts
         ]
 
