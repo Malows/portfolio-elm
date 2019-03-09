@@ -1,18 +1,19 @@
 @import 'components/all';
 
 #services {
-  margin: 10rem auto;
-  display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    margin: 10rem auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
 #profile {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas: 'profile knowledges knowledges';
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 'profile knowledges knowledges';
 
-  @media (max-width: 1200px) {
-    grid-template-columns: 1fr;
-    grid-template-areas: 'profile' 'knowledges';
-  }
+    @media (max-width: 1200px) {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'profile' 'knowledges';
+    }
 }

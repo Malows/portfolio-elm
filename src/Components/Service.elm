@@ -8,7 +8,7 @@ import Types exposing (Service)
 
 stackedIcon : String -> Html msg
 stackedIcon icon =
-    span [ class "fa-stack", class "fa-2x" ]
+    span [ class "fa-stack", class "fa-3x" ]
         [ i
             [ class "fas"
             , class "fa-circle"

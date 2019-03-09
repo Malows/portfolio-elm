@@ -11,19 +11,19 @@
         font-size: 6rem;
         text-align: center;
         font-weight: 100;
-        background: linear-gradient(to right, #480048, #C04848);
+        background: linear-gradient(to right, var(--color-ternary), var(--color-quaternary));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: all 1s linear;
 
         &--hover {
-            -webkit-text-fill-color: white;
+            -webkit-text-fill-color: var(--color-cloud);
             background: none;
         }
     }
 
     &--hover {
         transition: all 2s linear;
-        background: linear-gradient(to right, #2B32B2, #1488CC);
+        background: linear-gradient(to right, var(--color-secondary), var(--color-primary));
     }
 }
