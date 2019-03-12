@@ -1,6 +1,6 @@
 module Model exposing (Model, init)
 
-import Types exposing (Knowledge, Service)
+import Types exposing (Knowledge, Portfolio, Service)
 
 
 type alias Model =
@@ -10,6 +10,8 @@ type alias Model =
     , services : List Service
     , welcomeMessage : String
     , overWelcome : Bool
+    , selectedPortfolio : Maybe Portfolio
+    , portfolios : List Portfolio
     }
 
 
@@ -81,5 +83,35 @@ init =
 
         welcome =
             "Nice to see you around"
+
+        portfolios =
+            [ Portfolio
+                "Title 1"
+                "img/skills/rust.svg"
+                "img/skills/rust.svg"
+                "Master of Obvious"
+                """Master of the null.
+                Spellcaster from the void.
+                Engineer of the oblivion."""
+                Nothing
+            , Portfolio
+                "Title 1"
+                "img/skills/rust.svg"
+                "img/skills/rust.svg"
+                "Master of Obvious"
+                """Master of the null.
+                Spellcaster from the void.
+                Engineer of the oblivion."""
+                Nothing
+            , Portfolio
+                "Title 1"
+                "img/skills/rust.svg"
+                "img/skills/rust.svg"
+                "Master of Obvious"
+                """Master of the null.
+                Spellcaster from the void.
+                Engineer of the oblivion."""
+                Nothing
+            ]
     in
-    Model socialItems Nothing knowledges services welcome False
+    Model socialItems Nothing knowledges services welcome False Nothing portfolios
