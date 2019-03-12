@@ -1,4 +1,4 @@
-module Types exposing (..)
+module Types exposing (Knowledge, Portfolio, Service)
 
 
 type alias Service =
