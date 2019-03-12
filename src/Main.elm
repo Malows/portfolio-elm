@@ -1,6 +1,7 @@
 module Main exposing (main, view)
 
 import Browser
+import Components.Portfolio as Portfolio
 import Components.Profile as Profile
 import Components.Service as Services
 import Components.Welcome as Welcome
@@ -24,4 +25,5 @@ view model =
         [ Welcome.view model
         , Services.view model
         , Profile.view model
+        , Portfolio.view model
         ]
