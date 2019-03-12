@@ -1,29 +1,61 @@
-module Components.Portfolio exposing (portfolio, portfolioHover)
+module Components.Portfolio exposing (view)
 
-import Helpers exposing (picture)
-import Html exposing (Html, div, h4, i, p, text)
-import Html.Attributes exposing (class)
+import Html exposing (Html, div, h4, i, img, p, section, text)
+import Html.Attributes exposing (alt, class, id, src)
+import Model exposing (Model)
 import Types exposing (Portfolio)
 
 
-portfolioHover : Html msg
-portfolioHover =
-    div [ class "portfolio-item__hover-container", class "bg-primary--light" ]
-        [ div [ class "portfolio-item__hover-content" ]
-            [ i [ class "fas", class "fa-plus", class "fa-3x" ] []
+itemLink : String -> String -> Html msg
+itemLink url altText =
+    div
+        [ class "portfolio-item__link" ]
+        [ div
+            [ class "portfolio-item__hover-content" ]
+            [ i
+                [ class "fas"
+                , class "fa-plus"
+                , class "fa-3x"
+                ]
+                []
             ]
+        , img
+            [ class "img-responsive"
+            , class "portfolio-item__img"
+            , src url
+            , alt altText
+            ]
+            []
         ]
 
 
-portfolio : Portfolio -> Html msg
-portfolio data =
-    div [ class "portfolio-item" ]
-        [ div [ class "portfolio-item__link" ]
-            [ portfolioHover
-            , picture [ class "img-responsive" ] data.imgThumbnail "jpg"
-            ]
-        , div [ class "portfolio-item__caption" ]
-            [ h4 [] [ text data.title ]
-            , p [ class "text-muted" ] [ text data.activity ]
-            ]
+itemCaption : String -> String -> Html msg
+itemCaption title activity =
+    div
+        [ class "portfolio-item__caption" ]
+        [ h4
+            []
+            [ text title ]
+        , p
+            [ class "text-muted" ]
+            [ text activity ]
+        ]
+
+
+portfolioItem : Portfolio -> Html msg
+portfolioItem { activity, imgThumbnail, title } =
+    div
+        [ class "portfolio-item" ]
+        [ itemLink imgThumbnail title
+        , itemCaption title activity
+        ]
+
+
+view : Model -> Html msg
+view { selectedPortfolio, portfolios } =
+    section
+        [ id "portfolio" ]
+        [ div
+            [ class "portfolio__items" ]
+            (List.map portfolioItem portfolios)
         ]
