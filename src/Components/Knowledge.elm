@@ -2,11 +2,35 @@ module Components.Knowledge exposing (knowledgeLayout)
 
 import Helpers exposing (picture)
 import Html exposing (Html, div, img, p, text)
-import Html.Attributes exposing (class, src)
+import Html.Attributes exposing (alt, class, src)
 import Html.Events exposing (onClick)
 import Messages exposing (Msg(..))
 import Model exposing (Model)
 import Types exposing (Knowledge)
+
+
+last : String -> String -> Int
+last search str =
+    String.indexes search str
+        |> List.reverse
+        |> List.head
+        |> Maybe.withDefault -1
+
+
+skillFromUrl : String -> String
+skillFromUrl url =
+    let
+        firstIndex =
+            last "/" url
+
+        lastIndex =
+            last "." url
+    in
+    if firstIndex == -1 || lastIndex == -1 then
+        "skill"
+
+    else
+        String.slice (firstIndex + 1) lastIndex url
 
 
 knowledge : Knowledge -> Html Msg
@@ -17,6 +41,7 @@ knowledge data =
             [ img
                 [ class "img-responsive"
                 , src data.url
+                , alt (skillFromUrl data.url ++ "'s skills")
                 ]
                 []
             ]
@@ -26,7 +51,15 @@ knowledge data =
 
 picInDescription : String -> Html msg
 picInDescription url =
-    div [ class "knowledges__description__img" ] [ img [ class "img-responsive", src url ] [] ]
+    div
+        [ class "knowledges__description__img" ]
+        [ img
+            [ class "img-responsive"
+            , src url
+            , alt (skillFromUrl url)
+            ]
+            []
+        ]
 
 
 stringSplitter : String -> List (Html msg)
