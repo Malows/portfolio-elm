@@ -1,7 +1,7 @@
 module Helpers exposing (picture, sourceMaker)
 
 import Html exposing (Html, img, node, source)
-import Html.Attributes exposing (attribute, src, type_, class)
+import Html.Attributes exposing (attribute, class, src, type_)
 
 
 sourceMaker : String -> String -> Html msg
