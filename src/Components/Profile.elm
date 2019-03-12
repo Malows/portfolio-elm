@@ -2,7 +2,7 @@ module Components.Profile exposing (view)
 
 import Components.Knowledge exposing (knowledgeLayout)
 import Html exposing (Html, a, div, h4, i, img, li, p, section, span, text, ul)
-import Html.Attributes exposing (class, href, id, src)
+import Html.Attributes exposing (alt, class, href, id, src)
 import Messages exposing (Msg)
 import Model exposing (Model)
 
@@ -54,12 +54,15 @@ socialList list =
 profile : List ( String, String ) -> Html msg
 profile socialContacts =
     div [ class "profile" ]
-        [ img
-            [ class "profile__img"
-            , class "img-responsive"
-            , src "img/pht.png"
+        [ div
+            [ class "profile__img" ]
+            [ img
+                [ class "img-responsive"
+                , src "img/pht.png"
+                , alt "avatar"
+                ]
+                []
             ]
-            []
         , h4 [ class "profile__title" ] [ text "Juan Manuel Cruz" ]
         , p
             [ class "profile__subtitle"
