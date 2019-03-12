@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="177.72665"
+   height="200"
+   viewBox="0 0 177.72665 199.99999"
+   enable-background="new 0 0 306 344.35"
+   xml:space="preserve"
+   sodipodi:docname="ISO_C++_Logo.svg"
+   inkscape:version="0.92.4 (unknown)"><metadata
+   id="metadata25"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+   id="defs23" /><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1920"
+   inkscape:window-height="1026"
+   id="namedview21"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="0.6853492"
+   inkscape:cx="155.91822"
+   inkscape:cy="-321.77215"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<path
+   d="m 175.46558,150.00015 c 1.39452,-2.41558 2.26108,-5.13724 2.26108,-7.58126 V 57.58111 c 0,-2.44402 -0.8654,-5.1651 -2.26049,-7.58068 l -86.602838,49.99986 z"
+   id="path2"
+   inkscape:connector-curvature="0"
+   style="fill:#00599c;stroke-width:0.99999994" />
+<path
+   d="m 96.559012,198.16697 73.471968,-42.41858 c 2.11646,-1.22202 4.04009,-3.3321 5.4346,-5.74824 L 88.863332,100.00029 2.261078,150.00071 c 1.3945156,2.41558 3.318726,4.52624 5.4346026,5.74768 L 81.16765,198.16697 c 4.232334,2.44404 11.159028,2.44404 15.391362,0 z"
+   id="path4"
+   inkscape:connector-curvature="0"
+   style="fill:#004482;stroke-width:0.99999994" />
+<path
+   d="m 175.46617,49.99987 c -1.3951,-2.41616 -3.31931,-4.52624 -5.43519,-5.74826 L 96.559012,1.83303 c -4.232334,-2.44404 -11.159028,-2.44404 -15.391362,0 L 7.6956806,44.25161 C 3.4627658,46.69507 0,52.69363 0,57.58111 v 84.83778 c 0,2.44402 0.86598188,5.16568 2.261078,7.58126 l 86.602254,-49.99986 z"
+   id="path6"
+   inkscape:connector-curvature="0"
+   style="fill:#659ad2;stroke-width:0.99999994" />
+<g
+   id="g10"
+   transform="matrix(0.58080608,0,0,0.58080608,0,10e-6)"
+   style="stroke-width:1.72174501">
+	<path
+   d="m 153,274.175 c -56.243,0 -102,-45.757 -102,-102 0,-56.243 45.757,-102 102,-102 36.292,0 70.139,19.53 88.331,50.968 l -44.143,25.544 C 188.083,130.951 171.15,121.175 153,121.175 c -28.122,0 -51,22.878 -51,51 0,28.121 22.878,51 51,51 18.152,0 35.085,-9.776 44.191,-25.515 l 44.143,25.543 c -18.192,31.441 -52.04,50.972 -88.334,50.972 z"
+   id="path8"
+   inkscape:connector-curvature="0"
+   style="fill:#ffffff;stroke-width:1.72174501" />
+</g>
+<g
+   id="g14"
+   transform="matrix(0.58080608,0,0,0.58080608,0,10e-6)"
+   style="stroke-width:1.72174501">
+	<polygon
+   points="243.666,166.508 243.666,155.175 232.334,155.175 232.334,166.508 221,166.508 221,177.841 232.334,177.841 232.334,189.175 243.666,189.175 243.666,177.841 255,177.841 255,166.508 "
+   id="polygon12"
+   style="fill:#ffffff;stroke-width:1.72174501" />
+</g>
+<g
+   id="g18"
+   transform="matrix(0.58080608,0,0,0.58080608,0,10e-6)"
+   style="stroke-width:1.72174501">
+	<polygon
+   points="286.166,166.508 286.166,155.175 274.834,155.175 274.834,166.508 263.5,166.508 263.5,177.841 274.834,177.841 274.834,189.175 286.166,189.175 286.166,177.841 297.5,177.841 297.5,166.508 "
+   id="polygon16"
+   style="fill:#ffffff;stroke-width:1.72174501" />
+</g>
+</svg>
